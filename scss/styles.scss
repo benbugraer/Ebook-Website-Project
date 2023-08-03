@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+// Navbar Button
+.navbar .btn-outline-light:hover {
+    color: #10bcee;
+}
+.collapse .home:hover,
+.collapse .details:hover {
+    border-bottom: 2px solid #f2f2f2;
+    transition: all 0.2s ease-in-out;
+    border-radius: 1px;
+} 
+.navbar-sticky {
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+// Header Styling
+.header {
+    background: url(../images/header-background.jpg) no-repeat center center/cover;
+}
+// IMG Header Hover
+.img-header:hover {
+    transition: all 0.7s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+// BTN Styling
+.btn {
+    &-primary,
+    &-secondary {
+        color: #fff;
+    }
+    &-danger:hover {
+        background: #fff;
+        color: red;
+        border: 1px solid red;
+        transition: all 0.3s linear;
+    }
+    &-secondary:hover {
+        background: #fff;
+        color: #10bcee;
+        transition: all 0.4s linear;
+    }
+    &-primary:hover {
+        background: #f2f2f2;
+        color: #28B463;
+        transition: all 0.4s linear;
+    }
+}
+// Modal
+.modal-dialog {
+    max-width: 1050px ;
+}
+// Border Bottom
+.border-bottom {
+    width: 350px;
+    margin-left: 35px;
+    border: 2px solid #10bcee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+// Downloads Background Images
+.download {
+    background: url(../images/download-background.jpg) no-repeat center center/cover;
+}
+.modal-dialog {
+    max-width: 1050px;
+  }
+  
+  .border-bottom {
+    width: 350px;
+    margin-left: 35px;
+    border: 2px solid #10bcee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .download {
+    background: url(../images/download-background.jpg) no-repeat center center/cover;
+  }
+// Social Media Styling
+.fa-brands {
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+        opacity: 0.9;
+    }
+}
+.fa-square {
+    &-facebook {
+        color: #3b5998;
+    }
+    &-instagram {
+        color: #E1306C;
+    }
+    &-twitter {
+        color: #00acee;
+
+    }
+    &-github {
+        color: #000 ;
+    }
+    &-pinterest {
+        color: #E60023;
+    }
+}
+// Footer 
+.footer {
+    color: #10bcee;
+
+    &:hover {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        transition: all 0.3s linear;
+    }
+}
+.footer-border {
+    border-top: 4px solid #10bcee;
+}
+// Map Styling
+.location iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+}
+// Media Queries
+@media (max-width: 1000px) {
+    .hero {
+        & .image-container {
+            display: flex;
+            justify-content: center;
+        }
+        & .text-container {
+            text-align: center;
+        }
+    }
+    .navbar {
+        background: #333;
+    }
+    .details .btn {
+        display: inline-block;
+        width: 100%;
+    }
+}
